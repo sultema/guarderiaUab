@@ -1,0 +1,63 @@
+@page{
+	size: auto; /* tamaño de pagina en ancho y alto (para A4 : 21.0cm x 29.7cm) etc*/
+	/*size: landscape;
+	margin:10%;*/
+	}
+
+@page :left{
+	margin-left: 2cm;
+	margin-right: 2cm;
+	}
+@page :right{
+	margin-left: 2cm;
+	margin-right: 2cm;
+	}
+	
+body{
+	font-family:arial;
+	overflow-x:hidden;
+	overflow-y:hidden	
+	}
+#header{
+	display:none !important;
+	
+	}
+.btn{
+display:none !important;
+
+}
+.page-header{
+	text-transform: uppercase;
+	text-align: center;
+	font-size: larger;
+	font-weight: bolder;
+}	
+#menu{
+	display:none !important;
+	}
+#contenido{
+	text-align:justify;
+	}
+#pie{
+	display:none !important;
+	}
+table{
+	border:none;
+	page-break-inside : avoid /*Evitar los breaks de la tabla*/
+	}
+form{
+	display:none !important;
+}
+#tab1{
+	border:none;
+	page-break-inside : avoid /*Evitar los breaks de la tabla*/
+}
+#btnimp{
+	display:none !important;
+}
+/*.element::-webkit-scrollbar { width: 0 !important }*/
+/* .element { overflow: -moz-scrollbars-none; } */ /*para IE +10*/
+/*::-webkit-scrollbar {
+    display: none;
+}*/
+html { overflow: hidden; }
