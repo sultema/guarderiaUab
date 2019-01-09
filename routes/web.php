@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('info', 'institucionController@index');
 
 /*Route::get('/beneficiarios', 'BeneficiarioController@index');
 Route::get('/beneficiarios/create', 'BeneficiarioController@create');

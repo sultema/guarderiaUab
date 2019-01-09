@@ -1,0 +1,9 @@
+.navbar-laravel {
+  background-color: #286090;
+}
+.navbar-laravel .navbar-nav .nav-link {
+  color: #fff;
+}
+.navbar-laravel .navbar-brand {
+  color: #fff;
+}
