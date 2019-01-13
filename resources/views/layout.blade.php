@@ -42,7 +42,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
@@ -77,9 +77,9 @@ desired effect
   <header class="main-header">
 
     <!-- Logo -->
-    <a href="index2.html" class="logo">
+    <a href="{{ url('home') }}" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>G.</b>U.</span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Guardería</b>UAB</span>
     </a>
@@ -180,10 +180,10 @@ desired effect
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
-        <!-- Optionally, you can add icons to the links -->
+        <li class="header">Panel de Control</li>
+        <!-- configuracion -->
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Configuraci&oacute;n</span>
+          <a href="#"><i class="fa fa-gear"></i> <span>Configuraci&oacute;n</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -195,7 +195,7 @@ desired effect
         </li>
         <!-- Registro -->
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Registro</span>
+          <a href="#"><i class="fa fa-pencil-square-o"></i> <span>Registro</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -206,8 +206,9 @@ desired effect
             <li><a href="{{url('/infantes')}}">Infantes</a></li>            
           </ul>
         </li>
+        <!-- Academico -->
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Academico</span>
+          <a href="#"><i class="fa fa-graduation-cap"></i> <span>Academico</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -218,12 +219,9 @@ desired effect
             <li><a href="{{url('/evaluaciones')}}"><i class="fa fa-link"></i> <span>Evaluaciones</span></a></li>
           </ul>
         </li>
-
-
-        
-        
+        <!-- Servicios-->
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Servicios</span>
+          <a href="#"><i class="fa fa-suitcase"></i> <span>Servicios</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -234,9 +232,9 @@ desired effect
             <li><a href="{{url('/salud')}}">Salud</a></li>            
           </ul>
         </li>
-      <!--  <li class="treeview"> -->
+         <!--  Kardex -->
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Kardex</span>
+          <a href="#"><i class="fa fa-folder"></i> <span>Kardex</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -247,9 +245,9 @@ desired effect
             
           </ul>
         </li>
-       
+       <!-- Estadisticas -->
         <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Estadisticas</span>
+          <a href="#"><i class="fa fa-bar-chart"></i> <span>Estadisticas</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
@@ -279,7 +277,7 @@ desired effect
       Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2018 <a href="#">Carrera de Ingeniería de Sistemas</a>.</strong> Universitarios : Sulmian Maderlin Terrazas Mamani - Giovannia Arelia Rodriguez Caller.
+    <strong>Copyright &copy; 2019 <a href="#">Carrera de Ingeniería de Sistemas</a>.</strong> Universitarios : Sulmian Maderlin Terrazas Mamani - Giovannia Arelia Rodriguez Caller.
   </footer>
 
   <!-- Control Sidebar -->
@@ -402,6 +400,7 @@ desired effect
 <script src="{{ url('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
 
 <script src="{{ url('dist/js/fastclick/lib/fastclick.js') }}"></script>
+
 <!-- AdminLTE App -->
 <script src="{{ url('dist/js/adminlte.min.js') }}"></script>
 
@@ -482,7 +481,21 @@ desired effect
         dom: 'Bfrtip',
         buttons: [
             'print'
-        ]
+        ],
+        "language": { ////cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json
+            "info": "_TOTAL_ registros",
+            "search":"Bucar",
+            "paginate": {
+              "next":"Siguiente",
+              "previous":"Anterior",
+            },
+            "loadingRecoders":"Cargando...",
+            "processing":"Procesando...",
+            "emptyTable":"No hay datos",
+            "ZeroRecords":"No hay coincidencias",
+            "infoEmpty":"",
+            "infoFiltered":""
+        }
     } 
      )
     $('#tab2').DataTable({
