@@ -35,6 +35,7 @@ Route::resource('nutricionales', 'NutricionalesController');
 Route::resource('sicologicos', 'SicologicosController');
 Route::resource('salud', 'SaludController');
 Route::resource('evaluaciones', 'EvaluacionController');
+Route::resource('apoderados', 'ApoderadoController');
 
 Route::get('/verinfantes', 'KardexController@listarinfantes');
 Route::get('/kardex/hce/{id}', 'KardexController@historiaclinica');
@@ -51,6 +52,15 @@ Route::get('/usuarios','UsuarioController@listarUsuarios');
 Route::get('/asignarrol/{id}', 'UsuarioController@asignarrol');
 Route::post('/guardarrol', 'UsuarioController@guardarrol');
 Route::get('/quitarrol/{usuario_id}/{rol_id}','UsuarioController@quitarrol');
+Route::get('/usuarios/registrar', 'UsuarioController@registrar');
+Route::post('/usuarios/registrado', 'UsuarioController@registrado');
+
+Route::get('/apoderados/listar','ApoderadoController@listarApoderados');
+Route::get('/asignarinfante/{id}', 'ApoderadoController@asignarinfante');
+Route::post('/guardarinfante', 'ApoderadoController@guardarinfante');
+Route::get('/quitarinfante/{apoderado_id}/{infante_id}','ApoderadoController@quitarinfante');
+
+
 
 Auth::routes();
 

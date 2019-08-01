@@ -203,7 +203,8 @@ desired effect
           <ul class="treeview-menu">
             <li><a href="{{url('/beneficiarios')}}">Beneficiarios</a></li>
             <li><a href="{{url('/educadoras')}}">Educadoras</a></li>
-            <li><a href="{{url('/infantes')}}">Infantes</a></li>            
+            <li><a href="{{url('/infantes')}}">Infantes</a></li>
+            <li><a href="{{url('/apoderados')}}">Apoderados</a></li>            
           </ul>
         </li>
         <!-- Academico -->
@@ -396,9 +397,9 @@ desired effect
 <script src="{{ url('bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js') }}"></script>
 <script src="{{ url('bower_components/datatables.net-bs/js/dataTables.buttons.min.js') }}"></script>
 <script src="{{ url('bower_components/datatables.net-bs/js/buttons.print.min.js') }}"></script>
-
+<script src="{{ url('bower_components/datatables.net-bs/js/dataTables.select.min.js') }}"></script>
 <script src="{{ url('bower_components/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script>
-
+<script src="{{ url('bower_components/inputmask/dist/min/inputmask/inputmask.min.js') }}"></script>
 <script src="{{ url('dist/js/fastclick/lib/fastclick.js') }}"></script>
 
 <!-- AdminLTE App -->
@@ -421,7 +422,7 @@ desired effect
     $('#datemask2').inputmask('mm/dd/yyyy', { 'placeholder': 'mm/dd/yyyy' })
     //Money Euro
     $('[data-mask]').inputmask()
-
+   
     //Date range picker
     $('#reservation').daterangepicker()
     //Date range picker with time picker
@@ -480,8 +481,10 @@ desired effect
       {
         dom: 'Bfrtip',
         buttons: [
-            'print'
+          'print'
         ],
+        
+        
         "language": { ////cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json
             "info": "_TOTAL_ registros",
             "search":"Bucar",

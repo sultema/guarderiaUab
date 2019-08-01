@@ -58,7 +58,7 @@ class InscritoController extends Controller
         $inscrito->fecha = $fecha;
         $inscrito->infante_id = $request->infante_id;
         $inscrito->grupo_id = $request->grupo_id;
-        if(empty($request->obervaciobnes))
+        if(empty($request->obervaciones))
         {
             $inscrito->observaciones = "Ninguna";
         }else{
@@ -107,7 +107,7 @@ class InscritoController extends Controller
         $inscrito = Inscrito::find($id);
         $inscrito->infante_id = $request->infante_id;
         $inscrito->grupo_id = $request->grupo_id;
-        if(empty($request->obervaciobnes))
+        if(empty($request->observaciones))
         {
             $inscrito->observaciones = "Ninguna";
         }else{

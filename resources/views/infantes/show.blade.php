@@ -21,6 +21,9 @@
                     <th>SEXO </th><td>{{$infante->sexo}} </td>
                 </tr>
                 <tr>
+                    <th>GRUPO SANGUINEO </th><td>{{$infante->gruposanguineo}} </td>
+                </tr>
+                <tr>
                     <th>BENEFICIARIO </th><td>{{$infante->beneficiario->nombres." ".$infante->beneficiario->apaterno." ".$infante->beneficiario->amaterno}} </td>
                 </tr>
             </table>

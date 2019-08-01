@@ -35,4 +35,8 @@ class Infante extends Model
     {
         return $this->hasMany('App\Inscrito');
     }
+    public function apoderados()
+    {
+        return $this->belongsToMany('App\Apoderado')->withTimestamps();
+    }
 }

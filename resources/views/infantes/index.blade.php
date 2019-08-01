@@ -15,7 +15,7 @@
             <table id="tab1" class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Nombre</th><th>Paterno</th><th>Materno</th><th>Sexo</th><th>Fecha de Nacimiento</th><th>Edad</th><th>Beneficiario</th><<th>Acciones</th>
+                        <th>Nombre</th><th>Paterno</th><th>Materno</th><th>Sexo</th><th>Grupo Sanguineo</th><th>Fecha de Nacimiento</th><th>Edad</th><th>Beneficiario</th><<th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -25,6 +25,7 @@
                         <td>{{$infante->apaterno}}</td>
                         <td>{{$infante->amaterno}}</td>
                         <td>{{$infante->sexo}}</td>
+                        <td>{{$infante->gruposanguineo}}</td>
                         <td>{{$infante->fechanacimiento}}</td>  
                         <td>{{$infante->edad()}}</td>  
                         <td>{{$infante->beneficiario->nombres}} {{$infante->beneficiario->apaterno}} {{$infante->beneficiario->amaterno}}</td>                        

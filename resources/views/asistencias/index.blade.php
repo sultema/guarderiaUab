@@ -30,11 +30,11 @@
                             </div>
                         </td>
                         <td>
-                            <form action="{{action('AsistenciaController@destroy', $asistencia['id'])}}" method="post">
+                        <!--<form action="{{action('AsistenciaController@destroy', $asistencia['id'])}}" method="post">
                                 @csrf
                                 <input name="_method" type="hidden" value="DELETE">
                                 <button class="btn btn-default" type="submit"><i class="fa fa-trash"></i></button>
-                            </form>
+                            </form>-->
                         </td>
                     </tr>
                 @endforeach

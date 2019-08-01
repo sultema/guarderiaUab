@@ -31,9 +31,9 @@
             <ul class="full-reset list-unstyled">
                 <li><a href="{{ url('/') }}">Inicio</a></li>
                 <li><a href="{{ url('info') }}">Institución</a></li>
-                <li><a href="{{ route('register') }}">Registro</a></li>
+                <!-- <li><a href="{{ route('register') }}">Registro</a></li>-->
                 <li><a href="{{ route('login') }}">Acceder</a></li>
-                <li><a href="#" class="btm-mega-menu">Más &nbsp;<i class="fa fa-caret-down"></i></a></li>
+               <!-- <li><a href="#" class="btm-mega-menu">Más &nbsp;<i class="fa fa-caret-down"></i></a></li>-->
             </ul>
         </nav>
         <!--======================================== Mega menu ========================================-->

@@ -5,7 +5,7 @@
 @if(Auth::check())
 <div class="box">
         <div class="box-header">
-            <h3 class="box-title">HISTORIA NUTRICIONAL - {{strtoupper($nombreInfante)}} </h3>
+            <h3 class="box-title">HISTORIA SICOLOGICA - {{strtoupper($nombreInfante)}} </h3>
             <div class="box-body">
             @foreach($inscripciones as $inscripcion)
                 <div class="callout callout-info">

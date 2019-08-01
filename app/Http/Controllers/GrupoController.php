@@ -101,7 +101,7 @@ class GrupoController extends Controller
         $grupo = Grupo::find($id);
         $grupo->nombre = $request->nombre;
         $grupo->turno = $request->turno;
-
+        $grupo->educadora_id = $request->educadora_id;
         $grupo->save();
 
         return redirect()->route('grupos.index');

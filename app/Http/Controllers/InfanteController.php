@@ -60,6 +60,7 @@ class InfanteController extends Controller
         $infante->apaterno = $request->apaterno;
         $infante->amaterno = $request->amaterno;
         $infante->sexo = $request->sexo;
+        $infante->gruposanguineo = $request->gruposanguineo;
         $infante->fechanacimiento = date("Y/m/d", strtotime($request->fechanacimiento));
         $infante->beneficiario_id = $request->beneficiario_id;
 
@@ -115,6 +116,7 @@ class InfanteController extends Controller
         $infante->amaterno = $request->amaterno;
         $infante->fechanacimiento = $request->fechanacimiento;
         $infante->sexo = $request->sexo;
+        $infante->gruposanguineo = $request->gruposanguineo;
         $infante->beneficiario_id = $request->beneficiario_id;
 
         $infante->save();

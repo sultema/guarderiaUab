@@ -14,7 +14,7 @@
             <table id="tab1" class="table table-bordered table-striped">
                 <thead>
                     <tr>
-                        <th>Nombres</th><th>Paterno</th><th>Materno</th><th>CI</th><th>Acciones</th>
+                        <th>Nombres</th><th>Paterno</th><th>Materno</th><th>CI</th><th class="acc">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,7 +24,7 @@
                         <td>{{$beneficiario->apaterno}}</td>
                         <td>{{$beneficiario->amaterno}}</td>
                         <td>{{$beneficiario->ci}}</td>
-                        <td><a href="{{ route('beneficiarios.edit',$beneficiario->id) }}" class="btn btn-default"><i class="fa fa-fw fa-pencil"></i></a>
+                        <td class="acc"><a href="{{ route('beneficiarios.edit',$beneficiario->id) }}" class="btn btn-default"><i class="fa fa-fw fa-pencil"></i></a>
                             <a href="{{ route('beneficiarios.show',$beneficiario->id) }}" class="btn btn-default"><i class="fa fa-fw fa-folder-open"></i></a></td>
                     </tr>
                 @endforeach

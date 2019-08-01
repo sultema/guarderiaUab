@@ -24,7 +24,8 @@
             <div class="form-group">
                 <label for="nombres" class="col-sm-2 control-label">Nombres</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nombres" name="nombres" placeholder="Nombres">
+                    <input type="text" class="form-control" id="nombres" name="nombres" 
+                   input-datamask="'alias':'ip'" placeholder="Nombres" data-mask>
                 </div>
             </div> 
             <div class="form-group">
@@ -47,6 +48,12 @@
                         <option value="M">Masculino</option>
                         <option value="F">Femenino</option>
                     </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="gruposanguineo" class="col-sm-2 control-label">Grupo Sanguineo</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="gruposanguineo" name="gruposanguineo" placeholder="Grupo Sanguineo">
                 </div>
             </div>
             <div class="form-group">

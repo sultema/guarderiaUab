@@ -6,7 +6,12 @@
         <div class="box-header">
             <h3 class="box-title">USUARIOS</h3>
         </div>
-       
+        <div class="box-tools">
+            <a href="{{ url('/usuarios/registrar') }}" class="btn btn-default">Registro</a>
+        </div>
+
+
+        
         <div class="box-body">
             <table id="tab1" class="table table-bordered table-striped">
                 <thead>

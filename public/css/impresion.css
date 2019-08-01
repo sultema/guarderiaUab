@@ -55,6 +55,11 @@ form{
 #btnimp{
 	display:none !important;
 }
+
+.acc{
+	display:none !important;
+	border: none;
+}
 /*.element::-webkit-scrollbar { width: 0 !important }*/
 /* .element { overflow: -moz-scrollbars-none; } */ /*para IE +10*/
 /*::-webkit-scrollbar {

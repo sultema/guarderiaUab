@@ -20,7 +20,7 @@ class BeneficiarioController extends Controller
         $usuario = Auth::check();
         if($usuario)
         {
-            $request->user()->authorizeRoles(['administrador','secretaria']);
+            $request->user()->authorizeRoles(['administrador','bienestar']);
 
             $beneficiarios = Beneficiario::all();
             return view('beneficiarios.index', compact('beneficiarios'));

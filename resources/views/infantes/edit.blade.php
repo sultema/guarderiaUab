@@ -52,7 +52,12 @@
                     </select>
                 </div>
             </div>
-
+            <div class="form-group">
+                <label for="gruposanguineo" class="col-sm-2 control-label">Grupo Sanguineo</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="gruposanguineo" name="gruposanguineo" value="{{ $infante->gruposanguineo }}">
+                </div>
+            </div>
              <div class="form-group">
                 <label  for="fechanacimiento" class="col-sm-2 control-label">Fecha de Nacimiento</label>
                 <div class="input-group date">

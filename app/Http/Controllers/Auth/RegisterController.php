@@ -9,6 +9,9 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use App\Role;
 
+use Illuminate\Http\Request;
+use Illuminate\Auth\Registered;
+
 class RegisterController extends Controller
 {
     /*
@@ -29,7 +32,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/usuarios';
 
     /**
      * Create a new controller instance.
@@ -74,4 +77,18 @@ class RegisterController extends Controller
 
         return $user;
     }
+
+    /** 
+     * @param \Illuminate\Http\Request $request 
+     * @param \Illuminate\Http\Response
+    */
+   // public function register(Request $request)
+   // {
+   //     $this->validator($request->all())->validate();
+    //
+   //     event(new Registered($user = $this->create($request->all())));
+
+   //     return $this->registered($request, $user)
+   //         ?: redirect($this->redirectPath());
+   // }
 }

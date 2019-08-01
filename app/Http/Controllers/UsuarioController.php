@@ -58,4 +58,20 @@ class UsuarioController extends Controller
             return View('grupos.index', compact('mensaje'));
         }      
     }
+
+    public function registrar()
+    {
+        return view('usuarios.registrar');
+    }
+    public function registrado(Request $request)
+    {
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = $request->password;
+       
+        $user->save();
+
+        return redirect('/usuarios');
+    }
 }
